@@ -212,10 +212,6 @@ Shows the impact of hospital size on readmission rates, revealing that smaller h
 
 ---
 
-**(Insert Tableau Screenshot & Link Here)**
-
----
-
 ## **Data Source**
 
 https://data.cms.gov/provider-data/dataset/9n3s-kdb3#overview
