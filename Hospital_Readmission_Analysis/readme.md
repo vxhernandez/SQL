@@ -1,6 +1,5 @@
 
- <img src="https://github.com/vxhernandez/Excel/blob/main/Coffee_Bean_Sales_Analysis/daily_grind_sales_insights.png">
-
+ <img src="https://github.com/vxhernandez/SQL/blob/main/Hospital_Readmission_Analysis/readmission_analysis.png">
 
 ## **Project Summary**
 
