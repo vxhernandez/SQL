@@ -1,4 +1,4 @@
-Tableau Dashboard https://public.tableau.com/views/HospitalReadmissionsAnalysis_17402660685680/HospitalReadmissionsAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link 
+[Tableau Dashboard](https://public.tableau.com/views/HospitalReadmissionsAnalysis_17402660685680/HospitalReadmissionsAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) 
 
  <img src="https://github.com/vxhernandez/SQL/blob/main/Hospital_Readmission_Analysis/readmission_analysis.png">
 
