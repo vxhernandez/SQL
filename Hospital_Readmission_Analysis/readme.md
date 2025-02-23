@@ -1,3 +1,7 @@
+
+ <img src="https://github.com/vxhernandez/Excel/blob/main/Coffee_Bean_Sales_Analysis/daily_grind_sales_insights.png">
+
+
 ## **Project Summary**
 
 This Hospital Readmissions Analysis Dashboard evaluates hospital performance based on excess readmission ratios, a key metric used by the Centers for Medicare & Medicaid Services (CMS) to improve hospital care quality.
