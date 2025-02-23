@@ -6,8 +6,6 @@ In October 2012, CMS introduced the Hospital Readmissions Reduction Program (HRR
 
 This project analyzes excess readmission ratios across different hospital sizes, conditions, and states to identify trends, outliers, and opportunities for reducing penalties and improving patient outcomes.
 
----
-
 ## **Objectives of the Analysis**
 
 - Understand the impact of the CMS Hospital Readmissions Reduction Program (HRRP) and how hospitals are penalized for excess readmissions.
@@ -15,8 +13,6 @@ This project analyzes excess readmission ratios across different hospital sizes,
 - Compare readmission performance by state and medical condition to see where hospitals struggle the most.
 - Examine hospital size as a factor in readmission rates and determine if smaller hospitals are disproportionately affected.
 - Provide data-driven recommendations to improve patient outcomes and reduce excess readmissions.
-
----
 
 ## **Key Insights**
 
