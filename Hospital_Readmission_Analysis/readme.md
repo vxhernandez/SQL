@@ -51,7 +51,6 @@ This project analyzes excess readmission ratios across different hospital sizes,
 - Smaller hospitals (0-99 discharges) have the highest readmission rates (1.03), making them more vulnerable to penalties.
 - Very large hospitals (1000+ discharges) perform best (0.97), likely due to better post-discharge care programs.
 
----
 
 ## **Data Analysis with SQL**
 
@@ -66,7 +65,6 @@ ORDER BY Excess_Ratio DESC;
 
 Finds hospitals with the highest excess readmission ratios, helping identify facilities that may need improvement.
 
----
 
 ### **2. State-Level Readmission Ratios**
 
@@ -84,7 +82,6 @@ ORDER BY Avg_Readmission_Ratio DESC;
 
 Compares readmission performance across states to find regions with higher-than-expected readmission issues.
 
----
 
 ### **3. Evaluating High-Performing Hospitals (Best Improvement Margins)**
 
@@ -104,7 +101,6 @@ ORDER BY Improvement_Margin DESC;
 
 Finds hospitals that performed significantly better than expected, highlighting facilities that excel in reducing readmissions.
 
----
 
 ### **4. Worst 5 Hospitals Per Condition**
 
@@ -134,7 +130,6 @@ ORDER BY Measure, Rank;
 
 Ranks the worst-performing hospitals for each condition, pinpointing where intervention is needed most.
 
----
 
 ### **5. Best vs. Worst Hospitals by Count**
 
@@ -162,7 +157,6 @@ GROUP BY
 
 Categorizes hospitals into best- and worst-performing groups for a quick high-level performance view.
 
----
 
 ### **6. Readmission Performance by Hospital Size**
 
@@ -193,7 +187,6 @@ ORDER BY Avg_Readmission_Ratio DESC;
 
 Shows the impact of hospital size on readmission rates, revealing that smaller hospitals have higher readmission rates.
 
----
 
 ## **Conclusion and Recommendations**
 
@@ -205,8 +198,6 @@ Shows the impact of hospital size on readmission rates, revealing that smaller h
 - Smaller hospitals (0-99 discharges) may need additional support to implement effective post-discharge care strategies.
 - Hospitals with high excess readmission ratios may face Medicare payment reductions, making it critical to invest in patient follow-ups and transitional care programs.
 - Healthcare policymakers can use this data to assess whether HRRP disproportionately impacts certain hospital sizes or geographic regions.
-
----
 
 ## **Data Source**
 
