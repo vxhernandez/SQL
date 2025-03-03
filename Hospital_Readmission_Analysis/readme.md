@@ -116,6 +116,7 @@ WITH National_Avg AS (
 ),
 Ranked_Hospitals AS (
     SELECT
+		h.Facility_ID,
         h.Facility_Name,
         h.State,
         h.Measure,
@@ -125,9 +126,9 @@ Ranked_Hospitals AS (
     JOIN National_Avg n
         ON h.Excess_Ratio > n.Avg_National_Readmission * 1.10
 )
-SELECT Facility_Name, State, Measure, Excess_Ratio
+SELECT Facility_ID, Facility_Name, State, Measure, Excess_Ratio
 FROM Ranked_Hospitals
-WHERE Rank <= 5
+WHERE Rank <= 1
 ORDER BY Measure, Rank;
 
 ```
