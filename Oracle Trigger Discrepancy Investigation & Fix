@@ -1,23 +1,17 @@
 Issue: Business Analysts and Developers reported that for one specific customer in the staging environment, 
 multiple triggers were missing from the customer’s schema. The DBA team was asked to analyze and resolve the issue.
 
-# Scope of Work
-
-Investigate missing triggers in the staging environment for a specific customer schema.
-
-Compare object counts between production template schema and staging copy schema.
-
-Identify missing triggers, extract DDL, and restore the objects.
-
-Validate that staging matches production after the fix.
+Scope of Work
+- Investigate missing triggers in the staging environment for a specific customer schema.
+- Compare object counts between production template schema and staging copy schema.
+- Identify missing triggers, extract DDL, and restore the objects.
+- Validate that staging matches production after the fix.
 
 Analysis
-1. Compared object counts between SCHEMA_TEMPLATE (production) and SCHEMA_COPY (staging)
+1. Compared object counts between SCHEMA_TEMPLATE and SCHEMA_COPY
 
-Used to identify discrepancies across object types.
-```sql
-SELECT * FROM dba_objects;
-```
+Query used to identify discrepancies across object types.
+
 SELECT 
     object_type,
     COUNT(CASE WHEN owner = 'SCHEMA_TEMPLATE' THEN 1 END) AS count_template,
@@ -31,7 +25,8 @@ WHERE owner IN ('SCHEMA_TEMPLATE', 'SCHEMA_COPY')
 GROUP BY object_type
 ORDER BY object_type;
 
-2. Identified missing triggers in staging
+2. Query to identify missing triggers in staging
+
 SELECT 
     trigger_name,
     'Missing in SCHEMA_COPY' AS status
@@ -45,8 +40,7 @@ WHERE owner = 'SCHEMA_TEMPLATE'
 ORDER BY trigger_name;
 
 Trigger Extraction
-
-Pulled DDL for each missing trigger from production and replaced schema references so the objects could be recreated in staging.
+Query to pull DDL for each missing trigger from production and replaced schema references so the objects could be recreated in staging.
 
 SELECT 
     REPLACE(
@@ -63,15 +57,9 @@ WHERE owner = 'SCHEMA_TEMPLATE'
   );
 
 Resolution
-
-Exported trigger metadata from production using Data Pump.
-
-Updated schema references (batch-edited using vi).
-
-Imported the corrected trigger definitions into the staging schema.
-
-Re-ran the comparison queries to confirm:
-
-All missing triggers were successfully created.
-
-Object counts between production and staging were aligned.
+- Exported trigger metadata from production using Data Pump.
+- Updated schema references (batch-edited using vi).
+- Imported the corrected trigger definitions into the staging schema.
+- Re-ran the comparison queries to confirm:
+- All missing triggers were successfully created.
+- Object counts between production and staging were aligned.
