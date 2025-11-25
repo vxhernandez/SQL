@@ -8,9 +8,7 @@ Scope of Work
 - Validate that staging matches production after the fix.
 
 Analysis
-1. Compared object counts between SCHEMA_TEMPLATE and SCHEMA_COPY
-
-Query used to identify discrepancies across object types.
+1. Compared object counts between SCHEMA_TEMPLATE and SCHEMA_COPY. Query used to identify discrepancies across object types.
 
 SELECT 
     object_type,
@@ -25,7 +23,7 @@ WHERE owner IN ('SCHEMA_TEMPLATE', 'SCHEMA_COPY')
 GROUP BY object_type
 ORDER BY object_type;
 
-2. Query to identify missing triggers in staging
+2. Query to identify missing triggers in staging.
 
 SELECT 
     trigger_name,
